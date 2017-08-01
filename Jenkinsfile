@@ -3,9 +3,9 @@ pipeline {
   stages {
     stage ('build') {
       steps {
-        sh 'javac -d . src/*.java'
-        sh 'echo Main-class: Rectangular > MANIFEST.MF'
-        sh 'jar -cvmf MANIFEST.MF rectangular.jar .class'
+        sh 'javac -d . src/.java'
+        sh 'echo Main-class: Rectangulator > MANIFEST.MF'
+        sh 'jar -cvmf MANIFEST.MF rectangle.jar .class'
        }
      }
     }
